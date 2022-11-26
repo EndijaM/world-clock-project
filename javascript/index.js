@@ -8,7 +8,7 @@ function updateTime() {
     let brusselsTime = moment().tz("Europe/Brussels");
     brusselsDateElement.innerHTML = brusselsTime.format("MMMM Do YYYY");
     brusselsTimeElement.innerHTML = brusselsTime.format(
-      "h:mm:ss:SS [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
   //Shanghai
@@ -19,7 +19,7 @@ function updateTime() {
     let shanghaiTime = moment().tz("Asia/Shanghai");
     shanghaiDateElement.innerHTML = shanghaiTime.format("MMMM Do YYYY");
     shanghaiTimeElement.innerHTML = shanghaiTime.format(
-      "h:mm:ss:SS [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
   //Toronto
@@ -30,7 +30,7 @@ function updateTime() {
     let torontoTime = moment().tz("America/Toronto");
     torontoDateElement.innerHTML = torontoTime.format("MMMM Do YYYY");
     torontoTimeElement.innerHTML = torontoTime.format(
-      "h:mm:ss:SS [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
@@ -48,7 +48,7 @@ function updateCity(event) {
 <h2>${cityName}</h2>
 <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
 </div>
-<div class="time">${cityTime.format("h:mm:ss:SS")} <small>${cityTime.format(
+<div class="time">${cityTime.format("h:mm")} <small>${cityTime.format(
     "A"
   )}</small>
 </div>
@@ -59,7 +59,7 @@ function updateCity(event) {
 
 updateTime();
 
-setInterval(updateTime, 1);
+setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
