@@ -20,6 +20,7 @@ img {
   float: right;
   width: 13%;
   margin-right: 30px;
+  margin-top: -15px;
 }
 select {
   display: block;
@@ -32,7 +33,7 @@ select {
 
 .container {
   margin: 50px auto;
-  max-width: 580px;
+  max-width: 600px;
   background-color: white;
   padding: 32px;
   border-radius: 10px;
@@ -54,7 +55,7 @@ select {
   opacity: 0.8;
 }
 .time small {
-  font-size: 24px;
+  font-size: 20px;
   vertical-align: middle;
 }
 .date {
