@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World clock by Endija Mathur</title>
     <link rel="stylesheet" href="styles/app.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.39/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -22,27 +24,27 @@
         <option value="">London</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="brussels">
         <div>
-          <h2>Tokyo</h2>
+          <h2>Brussels</h2>
 
           <div class="date">25.11.2022</div>
         </div>
         <div class="time">1:48:15 <small>AM</small></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="beijing">
         <div>
-          <h2>Oslo</h2>
+          <h2>Beijing</h2>
 
           <div class="date">25.11.2022</div>
         </div>
         <div class="time">1:48:15 <small>AM</small></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="ottawa">
         <div>
-          <h2>Los Angeles</h2>
+          <h2>Ottawa</h2>
 
           <div class="date">25.11.2022</div>
         </div>
